@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <table border="1" style="width:70%; margin:auto" cellpadding="15">
+        <tr>
+            <td colspan="11"></td>
+        </tr>
+        <tr style="text-align:center">
+            <td style="width:25%"></td>
+            <td colspan="4" width="30%" style="text-align:left"><strong>LOGO</strong></td>
+            <td><strong>צור קשר</strong></td>
+            <td><strong>תקנון</strong></td>
+            <td><strong>אודות</strong></td>
+            <td><strong>על הפרוייקט</strong></td>
+            <td></td>
+            <td style="width:25%"></td>
+        </tr>
+        <tr>
+            <th colspan="11" style="height: 60px; font-size:25px; background-color: #F1F7FF; color:#5CAF49"><strong>דף הרשמה</strong></th>
+        </tr>
+    </table>
+
+    <form>
+        <table border="1" style="width:70%; margin:40px auto;" cellpadding="10" dir="rtl">
+            <tr>
+                <td width="2%"></td>
+                <td width="49%" valign="top">
+                    <table border="1" width="100%" cellpadding="10" dir="rtl">
+                        <tr height="70">
+                            <td width="15%"><strong>שם פרטי:</strong></td>
+                            <td width="80%">
+                                <input type="text" id="fName" name="fName" placeholder="שם פרטי" style="width:95%; height:35px;" required>
+                            </td>
+                            <td width="5%"></td>
+                        </tr>
+
+                        <tr height="70">
+                            <td><strong>שם משפחה:</strong></td>
+                            <td>
+                                <input type="text" id="lName" name="lName" placeholder="שם משפחה" style="width:95%; height:35px;" required>
+                            </td>
+                            <td></td>
+                        </tr>
+
+                        <tr height="70">
+                            <td><strong>Email:</strong></td>
+                            <td>
+                                <input type="email" id="uEmail" name="uEmail" placeholder="Email" style="width:95%; height:35px;" required>
+                            </td>
+                            <td></td>
+                        </tr>
+
+                        <tr height="70">
+                            <td><strong>סיסמא:</strong></td>
+                            <td>
+                                <input type="password" id="uPass" name="uPass" placeholder="סיסמא" style="width:95%; height:35px;" required>
+                                <div style="text-align:left; direction:ltr; margin-top:5px;">
+                                    <input type="checkbox" id="checkboxID" name="Show Password"
+                                           onclick="document.getElementById('uPass').type = this.checked ? 'text' : 'password';">
+                                    Show Password
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+
+                        <tr height="70">
+                            <td><strong>אימות סיסמא:</strong></td>
+                            <td>
+                                <input type="password" name="confirmPassword" placeholder="אימות סיסמא" style="width:95%; height:35px;" required>
+                            </td>
+                            <td></td>
+                        </tr>
+
+                        <tr height="20">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td width="49%" valign="top">
+                    <table border="1" width="100%" cellpadding="10" dir="rtl">
+                        <tr height="70">
+                            <td width="25%"><strong>טלפון:</strong></td>
+                            <td width="68%">
+                                <div dir="ltr" style="text-align:right;">
+                                    <select name="prefix" style="height:35px;">
+                                        <option value="052">052</option>
+                                    </select>
+
+                                    <input type="tel" id="uMobile" name="uMobile" placeholder="טלפון נייד" maxlength="7" style="height:35px; width:60%; text-align:right;">
+                                </div>
+                            </td>
+                            <td width="7%"></td>
+                        </tr>
+
+                        <tr height="70">
+                            <td><strong>תאריך לידה:</strong></td>
+                            <td colspan="2">
+                                <div dir="ltr" style="text-align:right;">
+                                    <select id="day" name="day" style="height:35px;">
+                                        <option value="16">16</option>
+                                    </select>
+
+                                    <select id="month" name="month" style="height:35px;">
+                                        <option value="10">10</option>
+                                    </select>
+
+                                    <select id="year" name="year" style="height:35px;">
+                                        <option value="2025">2025</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr height="70">
+                            <td><strong>מגדר:</strong></td>
+                            <td>
+                                <table border="1" align="right" cellpadding="2" dir="rtl">
+                                    <tr>
+                                        <td>זכר</td>
+                                        <td><input type="radio" id="male" name="gender" value="male"></td>
+                                        <td></td>
+                                        <td>נקבה</td>
+                                        <td><input type="radio" id="female" name="gender" value="female"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td></td>
+                        </tr>
+
+                        <tr height="20">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr height="45">
+                            <td></td>
+                            <td dir="rtl">
+                                <label>
+                                    <input type="checkbox" id="termsID" name="terms" required>
+                                    נא לעיין בתקנון ולאשר את
+                                    <span style="color:blue; text-decoration:underline;">תנאי שימוש</span>
+                                    באתר
+                                </label>
+                            </td>
+                            <td></td>
+                        </tr>
+
+                        <tr height="20">
+                            <td colspan="2"></td>
+                            <td></td>
+                        </tr>
+
+                        <tr height="65">
+                            <td colspan="2">
+                                <input type="submit" id="submit" value="Submit"
+                                       style="width:100%; height:45px; background-color:#5CAF49; color:white; font-size:18px;">
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
