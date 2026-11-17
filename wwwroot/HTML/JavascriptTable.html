@@ -8,25 +8,30 @@
         function createTable(fName, lName, uAge, uAddress) {
             document.write(
                 "<table cellpadding='15' border='1' align='center' dir='rtl'>" +
-                "<tr>" +
-                "<th>שם פרטי</th>" +
-                "<th>שם משפחה</th>" +
-                "<th>גיל</th>" +
-                "<th>כתובת</th>" +
-                "</tr>" +
-                "<tr>" +
-                "<td style='background-color:deepskyblue'>" + fName + "</td>" +
-                "<td style='background-color:orange'>" + lName + "</td>" +
-                "<td style='background-color:lawngreen'>" + uAge + "</td>" +
-                "<td style='background-color:red'>" + uAddress + "</td>" +
-                "</tr>" +
+                    "<tr>" +
+                        "<th>שם פרטי</th>" +
+                        "<th>שם משפחה</th>" +
+                        "<th>גיל</th>" +
+                        "<th>כתובת</th>" +
+                    "</tr>" +
+                    "<tr>" +
+                        "<td style='background-color:deepskyblue'>" +
+                            fName +
+                        "</td>" +
+                        "<td style='background-color:orange'>" +
+                            lName +
+                        "</td>" +
+                        "<td style='background-color:lawngreen'>" +
+                            uAge +
+                        "</td>" +
+                        "<td style='background-color:red'>" +
+                            uAddress +
+                        "</td>" +
+                    "</tr>" +
                 "</table>"
             );
         }
-    </script>
-</head>
-<body>
-    <script type="text/javascript">
+
         var fName = prompt("enter your first name:");
         var lName = prompt("enter your last name:");
         var uAge = prompt("enter your age:");
@@ -34,5 +39,8 @@
 
         createTable(fName, lName, uAge, uAddress);
     </script>
+</head>
+<body>
+
 </body>
 </html>

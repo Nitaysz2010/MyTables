@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavascriptAlbom</title>
+    <script type="text/javascript">
+
+        var albomSize = 4;
+        var counter = 1;
+
+        function nextImage() {
+
+            if (counter < albomSize) {
+                counter++;
+            }
+            else {
+                counter = 1;
+            }
+
+            document.getElementById("albom").src = "../Images/img" + counter + ".jpeg";
+        }
+
+        function prevImage() {
+            
+            if (counter > 1) {
+                counter--;
+            }
+            else {
+                counter = albomSize;
+            }
+             
+            document.getElementById("albom").src = "../Images/img" + counter + ".jpeg";
+        }
+
+    </script>
+</head>
+<body>
+    <div align="center">
+        <h1>אלבום האופנועים</h1>
+        <br />
+        <a href="#" onclick="prevImage(); return false;">הקודם</a> |
+        <a href="#" onclick="nextImage(); return false;">הבא</a>
+        <br />
+        <br />
+        <img id="albom" src="../Images/img1.jpeg" alt="First image" height="300" />
+    </div>
+</body>
+</html>
